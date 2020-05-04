@@ -1,4 +1,5 @@
 module.exports = (client, message) => {
+  const tools = require('C:/Projetos/BotSemNomeYet/modules/player/functions.js');
   // Ignora outros bots
   if (message.author.bot) return;
 
@@ -16,5 +17,5 @@ module.exports = (client, message) => {
   if (!cmd) return;
 
   // roda o comando
-  cmd.run(client, message, args);
+  cmd.run(client, message, args, tools);
 };
