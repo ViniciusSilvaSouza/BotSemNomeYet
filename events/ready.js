@@ -8,6 +8,6 @@ module.exports = async (client) => {
         .then(user => console.log(`Nickname mudado para ${user.username}`))
         .catch(console.error);
 
-    client.user.setActivity('EM DESENVOLVIMENTO', { type: 1 });  //0 = Jogando; 1 = Transmitindo; 2 = Ouvindo; 3 = Assistindo
+    client.user.setActivity('EM DESENVOLVIMENTO', { type: 0 });  //0 = Jogando; 1 = Transmitindo; 2 = Ouvindo; 3 = Assistindo
 
 };
